@@ -3,19 +3,13 @@
   margin: 0;
   max-width: 1162;
   max-height: 900px;
-
 }
 
-
-.container{
-display: flex;
-flex-direction: column;
-
-}
-
+/* .wholebody{
+    display: flex;
+    height:1000px;
+} */
   body {
-    min-height: 100vh;
-    max-width: 75vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     background-color: #f2f2f2;
@@ -23,11 +17,9 @@ flex-direction: column;
   }
 
 form{
-    line-height: 2.5rem;
+    line-height: 1rem;
     text-align:left;
     color: #022959;
-
-
 }
 
 .topheader h1{
@@ -42,29 +34,20 @@ form{
     font-weight: lighter;
 }
 
-
-.container{
-    background-image:url(images/Oval\ \(1\).png);
-    background-repeat: no-repeat;
-    background-position: left top;
-    
-}
-
 .btn{
     background-color: #022959;
     color:white;
-    border-radius: 8px;
+    border-radius: 1em;
     font-size:16px;
     padding: 8px 16px 8px 16px;
-    max-width: 136px;
     height: 36px;
     margin-top: 36px;
-    margin-left: 350px;
     font-size: 12px;
+    float:right;
     }
 
 p{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     
 }
@@ -73,21 +56,57 @@ p{
 
 }
 
-.step{
+.first-step, .second-step, .third-step, .fourth-step{
     color:white;
     font-size: 12px;
-
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.5px;
 }
 input{
     width: 450px;
-    height: 36px;
+    height: 12px;
     border-radius: 8px;
     border: 1px #D6D9E6;
     background-color: #fff;
     padding: 25px;
 }
+
 .rightform
 {
-    padding: 85px;
+    width: 50%;
+    padding: 150px;
+    
 }
 
+main{
+    display:flex;
+}
+ 
+img{
+    position: relative;
+    max-width: 100%;
+}
+.first-step{
+    position: absolute;
+    top:16px;   
+    color:white;
+    padding:20px;
+}
+.second-step{
+    position: absolute;
+    top: 83px;
+    color:white;
+    padding:20px;
+}
+.third-step{
+    position: absolute;
+    top:150px;
+    color:white;
+    padding:20px;
+}
+.fourth-step{
+    position: absolute;
+    top:217px;
+    color:white;
+    padding:20px;
+}
